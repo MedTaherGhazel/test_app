@@ -7,8 +7,8 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
-        children: const [
-          DrawerHeader(
+        children: [
+          const DrawerHeader(
               decoration: BoxDecoration(
                   gradient: RadialGradient(
                       radius: 0.7,
@@ -34,27 +34,31 @@ class MyDrawer extends StatelessWidget {
             ),
             onTap: () {
               Navigator.of(context).pop();
-              Navigator.pushNamed(context, "/lib/ui/pages/home.page.dart");
+              Navigator.pushNamed(context, "/home");
             },
           ),
-          Divider(
+          const Divider(
             height: 2,
           ),
           ListTile(
-            title: Text(
+            title: const Text(
               "Meteo",
               style: TextStyle(fontSize: 20),
             ),
-            leading: Icon(
+            leading: const Icon(
               Icons.ac_unit,
               color: Colors.red,
             ),
-            trailing: Icon(
+            trailing: const Icon(
               Icons.arrow_right,
               color: Colors.red,
             ),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.pushNamed(context, "/meteo");
+            },
           ),
-          Divider(
+          const Divider(
             height: 2,
           ),
           ListTile(
@@ -70,8 +74,12 @@ class MyDrawer extends StatelessWidget {
               Icons.arrow_right,
               color: Colors.red,
             ),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.pushNamed(context, "/gallery");
+            },
           ),
-          Divider(
+          const Divider(
             height: 2,
           ),
         ],
