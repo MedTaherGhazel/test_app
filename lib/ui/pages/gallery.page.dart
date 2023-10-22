@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../ui_widget/widgets/drawer.widget.dart';
+
 class GalleryPage extends StatelessWidget {
   const GalleryPage({super.key});
 
@@ -7,12 +9,12 @@ class GalleryPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Gallery'),
+        title: Text('Gallery'),
       ),
+      drawer: const MyDrawer(),
       body: Center(
-        child: Text(
-          'Gallery Page',
-          style: Theme.of(context).textTheme.headlineMedium,
+        child: Container(
+          child: Image.asset('images/hbb.jpg'), // Replace with your image path
         ),
       ),
     );
