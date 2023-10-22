@@ -2,20 +2,18 @@ import 'package:flutter/material.dart';
 
 import '../../ui_widget/widgets/drawer.widget.dart';
 
-class GalleryPage extends StatelessWidget {
-  const GalleryPage({super.key});
+class CounterPage extends StatelessWidget {
+  const CounterPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Gallery'),
+        title: const Text('Settings'),
       ),
       drawer: const MyDrawer(),
-      body: Center(
-        child: Container(
-          child: Image.asset('images/hbb.jpg'), // Replace with your image path
-        ),
+      body: const Center(
+        child: Text('Settings'),
       ),
     );
   }

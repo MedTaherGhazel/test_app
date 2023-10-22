@@ -20,15 +20,15 @@ class MyDrawer extends StatelessWidget {
                 ),
               )),
           ListTile(
-            title: Text(
+            title: const Text(
               "Home",
               style: TextStyle(fontSize: 20),
             ),
-            leading: Icon(
+            leading: const Icon(
               Icons.home,
               color: Colors.red,
             ),
-            trailing: Icon(
+            trailing: const Icon(
               Icons.arrow_right,
               color: Colors.red,
             ),
@@ -62,15 +62,15 @@ class MyDrawer extends StatelessWidget {
             height: 2,
           ),
           ListTile(
-            title: Text(
+            title: const Text(
               "Gallery",
               style: TextStyle(fontSize: 20),
             ),
-            leading: Icon(
+            leading: const Icon(
               Icons.add_a_photo,
               color: Colors.red,
             ),
-            trailing: Icon(
+            trailing: const Icon(
               Icons.arrow_right,
               color: Colors.red,
             ),
@@ -81,6 +81,24 @@ class MyDrawer extends StatelessWidget {
           ),
           const Divider(
             height: 2,
+          ),
+          ListTile(
+            title: const Text(
+              "Settings",
+              style: TextStyle(fontSize: 20),
+            ),
+            leading: const Icon(
+              Icons.settings,
+              color: Colors.red,
+            ),
+            trailing: const Icon(
+              Icons.arrow_right,
+              color: Colors.red,
+            ),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.pushNamed(context, "/counter");
+            },
           ),
         ],
       ),
