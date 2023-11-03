@@ -1,5 +1,5 @@
 class AppConstants {
-  static const List<String> list1 = [
+  static const List<String> photo = [
     "images/image1.jpg",
     "images/image2.jpg",
     "images/image3.jpg",
@@ -12,7 +12,7 @@ class AppConstants {
     "images/image10.jpg",
   ];
 
-  static const List<String> list2 = [
+  static const List<String> desc = [
     "I am strong.",
     "I believe in myself.",
     "Each day is a new opportunity to grow and be a better version of myself.",
